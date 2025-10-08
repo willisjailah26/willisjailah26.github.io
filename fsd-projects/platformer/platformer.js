@@ -13,6 +13,7 @@ $(function () {
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
       //start game
+    
       setInterval(main, 1000 / frameRate);
     }
 
@@ -28,19 +29,48 @@ $(function () {
 
     // TODO 1 - Enable the Grid
     // toggleGrid();
+    
+    
 
 
     // TODO 2 - Create Platforms
+createPlatform(300, 700, 50, 50, "hotpink");
+createPlatform(1100, 550, 50, 50, "hotpink");
+createPlatform(480, 600, 50, 50, "red");
+createPlatform(650, 550, 50, 50, "hotpink");
+createPlatform( 850,550, 50, 50, "red");
+createPlatform(500, 0, 20, 290,"white");
+createPlatform(800, 0, 20, 290,"white");
+createPlatform(1110, 0, 20, 290,"white");
+createPlatform(200, 0, 20, 290,"white");
+
+
+
+
+
+
+
+
 
 
 
 
     // TODO 3 - Create Collectables
+   createCollectable("grace", 600, 170, 0.1, 0.7);
+   createCollectable("max", 425, 25,0.1,0.7);
+   createCollectable("steve", 1000,400);
+   createCollectable("database", 1350, 700);
+  //  createCollectable("diamond", 200, 100);
+
 
 
 
     
     // TODO 4 - Create Cannons
+    createCannon("bottom", 100,500);
+    createCannon("top", 955, 500);
+    createCannon("top", 1340, 300);
+
 
 
     
